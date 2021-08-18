@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      1
+    ],
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": [
+          "lib",
+          "components",
+          "styles",
+          "utils",
+          "hooks",
+          "data",
+          "constants"
+        ]
+      }
+    ]
+  }
+}
